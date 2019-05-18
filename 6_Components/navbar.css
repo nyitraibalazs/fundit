@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+.navbar-default .navbar-nav > li > a {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.03em;
+  margin-right: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  display: block;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.navbar-default .navbar-nav > li > a:hover:after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: red;
+  background-image: linear-gradient(to right, #0b47d5, #39eb5c);
+}
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+.navbar-default .navbar-collapse {
+  background-color: white;
+  border: none;
+}
+
+.container-fluid.navbar-container-fluid {
+  background-color: white;
+}
+.container-fluid > .navbar-header {
+  background-color: white;
+  padding: 8px 0 8px 0;
+}
+
+.banner-size {
+  width: auto;
+  height: 34px;
+}
+
+@media (min-width: 520px) {
+  .banner-size {
+    width: auto;
+    height: 34px;
+  }
+}
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 824px) {
+  .nav {
+    position: relative;
+    display: block;
+    left: 5%;
+  }
+
+  .banner-size {
+    display: block;
+    position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    position: relative;
+    display: block;
+    left: 20%;
+  }
+
+  .banner-size {
+    display: block;
+    position: relative;
+    left: 120%;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

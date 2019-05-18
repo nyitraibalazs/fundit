@@ -1,0 +1,26 @@
+/* ==
+I. Variables
+-Page variables
+
+II. Components
+-Basic settings
+-Navbar
+-Slider
+ == */
+
+
+// == VARIABLES == //
+@import "1_Settings/variables.scss";
+
+
+
+// == COMPONENTS == //
+
+//Basic settings (page)
+@import "6_Components/basic-settings.scss";
+
+//Navbar
+@import "6_Components/navbar.scss";
+
+//Slider
+@import "6_Components/slider.scss";

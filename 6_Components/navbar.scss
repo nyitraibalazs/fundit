@@ -1,0 +1,71 @@
+.fundit-navbar {
+    .social-media {
+        width: auto;
+        left: auto;
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+
+        &__listing {
+            background-color: $social-background-color;
+            display: inline-flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__twitter {
+            background: url("../fundit/images/basic-image/social_icons.png") no-repeat;
+            height: 50px;
+            width: 50px;
+            display: block;
+        }
+
+        &__facebook {
+            background: url("../fundit/images/basic-image/social_icons.png") no-repeat 0 -50px;
+            height: 50px;
+            width: 50px;
+            display: block;
+        }
+
+        &__google {
+            background: url("../fundit/images/basic-image/social_icons.png") no-repeat 0 -150px;
+            height: 50px;
+            width: 50px;
+            display: block;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    &__header-logo {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+
+.fundit-navbar-complete {
+    margin-bottom: 15px;
+
+    .navbar {
+        border-radius: 10px;
+        background-color: $navbar-background-color;
+
+        .navbar-brand {
+            font-size: 14px;
+        }
+
+        .navbar-toogler {
+            padding: 0;
+            height: 30px;
+        }
+
+        .navbar-toggler-icon {
+                height: 20px;
+        }
+
+        .navbar-nav {
+            font-size: 13px;
+        }
+    }
+}
