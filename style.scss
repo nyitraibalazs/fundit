@@ -6,10 +6,13 @@ II. Components
 -Basic settings
 -Navbar
 -Slider
+-content navbar + box
+-footer
  == */
 
 
 // == VARIABLES == //
+//Page variables
 @import "1_Settings/variables.scss";
 
 
@@ -24,3 +27,9 @@ II. Components
 
 //Slider
 @import "6_Components/slider.scss";
+//content navbar + box
+@import "6_Components/content.scss";
+
+//footer
+@import "6_Components/footer.scss";
+

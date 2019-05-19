@@ -6,12 +6,15 @@ II. Components
 -Basic settings
 -Navbar
 -Slider
+-content navbar + box
+-footer
  == */
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 body {
   background-image: url("/../fundit/images/basic-image/body-background-image.jpg");
 }
 
-.container-fluid {
+.container-fluid-all {
   width: 80%;
 }
 
@@ -85,6 +88,127 @@ body {
 .image-slider .carousel-control-prev-icon {
   width: 40px;
   height: 40px;
+}
+
+.page-section {
+  position: relative;
+  z-index: 1010;
+  color: white;
+  margin: 20px 0 10px 0;
+  font-family: "Quicksand", sans-serif;
+}
+.page-section .banner-slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.page-section .banner-slider::-webkit-scrollbar {
+  width: 0 !important;
+}
+.page-section .banner-slider__box {
+  display: table-cell;
+  float: none;
+  position: relative;
+  height: 265px;
+  min-width: 250px;
+  padding: 10px 20px;
+}
+.page-section .banner-slider__box h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  cursor: default;
+}
+.page-section .banner-slider__box p {
+  font-size: 16px;
+}
+.page-section .banner-slider__box--heritage {
+  background-color: #436460;
+}
+.page-section .banner-slider__box--benefactor {
+  background-color: #9c684e;
+}
+.page-section .banner-slider__box--platinum {
+  background-color: #71ad9e;
+}
+.page-section .banner-slider__box--diamond {
+  background-color: #6a8b5c;
+}
+.page-section .banner-slider__box--celestial {
+  background-color: #436460;
+}
+.page-section .banner-slider__button {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 22px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.content-navbar {
+  font-family: "Quicksand", sans-serif;
+}
+.content-navbar ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+.content-navbar ul:first-child {
+  padding-left: 0;
+}
+.content-navbar ul li {
+  background-color: #3a3939;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #fff;
+}
+.content-navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.content-navbar ul :active {
+  background-color: #2c2a29;
+}
+
+.content-box {
+  background-color: #2c2a29;
+  padding: 20px 12px;
+}
+.content-box .content-box__element {
+  background-color: #3a3939;
+  padding: 15px;
+  float: none;
+  margin: 0 0 15px 0;
+  width: auto;
+  text-align: justify;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+.content-box .content-box__element h2 {
+  text-shadow: 0 0 1px #fff;
+  text-transform: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.content-box .content-box__element p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-info {
+  padding: 10px 15px;
+  display: block;
+  background-color: #2c2a29;
+  text-shadow: 0 0 1px #fff;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
