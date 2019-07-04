@@ -13,7 +13,7 @@
         li {
             background-color: $content-default;
             padding: 12px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             text-shadow: 0 0 1px #fff;
 
@@ -33,27 +33,46 @@
     background-color: $content-active;
     padding: 20px 12px;
 
-    .content-box__element {
-        background-color: $content-default;
-        padding: 15px;
-        float: none;
-        margin: 0 0 15px 0;
-        width: auto;
-        text-align: justify;
-        color: #fff;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 400;
+    .content-box {
+        &__element {
+            background-color: $content-default;
+            padding: 15px;
+            float: none;
+            margin: 0 0 15px 0;
+            width: auto;
+            text-align: justify;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
 
-        h2 {
-            text-shadow: 0 0 1px #fff;
-            text-transform: none;
-            font-size: 18px;
-            margin-bottom: 10px;
+            &--widget-area {
+                text-align: center;
+
+                p {
+                    text-align: left;
+                }
+            }
+
+            h2 {
+                text-shadow: 0 0 1px #fff;
+                text-transform: none;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
+    }
+}
 
-        p {
-            font-size: 14px;
-            line-height: 18px;
+
+@media (min-width: 992px) {
+    .content-box {
+        .content-box__element {
+            margin-left: 25px;
         }
     }
 }

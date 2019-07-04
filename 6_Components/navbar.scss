@@ -1,3 +1,4 @@
+.image-slider__social-media,
 .fundit-navbar {
     .social-media {
         width: auto;
@@ -6,11 +7,22 @@
         text-align: center;
         margin-bottom: 10px;
 
+        &--image-slider {
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            z-index: 1010;
+        }
+
         &__listing {
             background-color: $social-background-color;
             display: inline-flex;
             padding: 0;
             margin: 0;
+
+            &--image-slider {
+                display: block;
+            }
         }
 
         &__twitter {
@@ -43,6 +55,19 @@
     }
 }
 
+@media (min-width: 992px) {
+    .image-slider__social-media,
+    .fundit-navbar {
+        &__header-logo {
+            text-align: left;
+        }
+    }
+
+    .fundit-navbar {
+        padding: 35px 0 15px 0;
+    }
+}
+
 
 .fundit-navbar-complete {
     margin-bottom: 15px;
@@ -66,6 +91,40 @@
 
         .navbar-nav {
             font-size: 13px;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .fundit-navbar-complete {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+
+
+        .navbar {
+            background-color: transparent;
+            padding-right: 0;
+        }
+
+
+        .navbar-nav {
+            .nav-link {
+                padding: 20px 14px;
+                background-color: rgba(0,0,0,0.4);
+                font-size: 18px;
+                color: #fff;
+                margin-right: 1px;
+
+                &.active {
+                    background-color: #6a8b5c;
+                }
+
+                &:hover {
+                    background-color: #6a8b5c;
+                }
+            }
         }
     }
 }
